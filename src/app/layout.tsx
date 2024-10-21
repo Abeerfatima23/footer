@@ -1,16 +1,11 @@
 import Footer from "@/components/Footer";
-import "./globals.css";
-export default function RootLayout({ children, 
-
-}:Readonly< { 
-  children: React.ReactNode;
- }>) {
-    return (
-      <html lang="en">
+import { init } from "next/dist/compiled/webpack/webpack";
+export default function Layout(){
+  return(
+    <html lang="en">
         <body>
           <Footer/>
         </body>
       </html>
-    
-    );
+  )
 }
